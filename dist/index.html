@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Łukasz Lach personal website</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    </head>
+    <body>
+<!--        <img class="image-background" src="assets/1.jpeg" alt=""/>-->
+        <video class="video-background" autoplay muted loop>
+            <source src="assets/code.mp4" type="video/mp4"/>
+        </video>
+        <nav class="nav">
+            <ul class="nav-links">
+                <li>
+                    <a href="https://github.com/Furmanus" target="_blank" rel="noopener">
+                        <img src="assets/github.png" alt="GitHub"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/%C5%82ukasz-lach-b7a00911a/" target="_blank" rel="noopener">
+                        <img src="assets/linkedin.png" alt="LinkedIn"/>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav-main">
+                <li data-nav="home">
+                    <span>home</span>
+                </li>
+                <li data-nav="portfolio">
+                    <span>my projects</span>
+                </li>
+                <li class="expandable">
+                    <span>about me</span>
+                    <ul class="about">
+                        <li data-nav="info">info</li>
+                        <li data-nav="hobby">cv</li>
+                    </ul>
+                </li>
+                <li data-nav="contact">
+                    <span>contact</span>
+                </li>
+            </ul>
+        </nav>
+        <main class="main">
+            <section class="home" id="home" data-role="page" data-page="home">
+                <h2>Łukasz Lach. JavaScript Developer</h2>
+                <p>Development stack:</p>
+                <div class="icon-container">
+                    <div class="icon-wrapper">
+                        <span>HTML5</span>
+                        <img class="icon-image" src="assets/html5.png" alt="HTML5"/>
+                    </div>
+                    <div class="icon-wrapper">
+                        <span>CSS3</span>
+                        <img class="icon-image" src="assets/css3.png" alt="CSS3"/>
+                    </div>
+                    <div class="icon-wrapper">
+                        <span>lessCss</span>
+                        <img class="icon-image" src="assets/less.jpg" alt="Less"/>
+                    </div>
+                    <div class="icon-wrapper">
+                        <span>JavaScript</span>
+                        <img class="icon-image" src="assets/js.jpg" alt="JavaScript"/>
+                    </div>
+                    <div class="icon-wrapper">
+                        <span>EcmaScript6</span>
+                        <img class="icon-image object-cover" src="assets/es6.jpeg" alt="EcmaScript6"/>
+                    </div>
+                    <div class="icon-wrapper">
+                        <span>TypeScript</span>
+                        <img class="icon-image object-cover" src="assets/ts.png" alt="TypeScript"/>
+                    </div>
+                    <div class="icon-wrapper">
+                        <span>React.js</span>
+                        <img class="icon-image" src="assets/reactjs.png" alt="ReactJs"/>
+                    </div>
+                    <div class="icon-wrapper">
+                        <span>Redux</span>
+                        <img class="icon-image" src="assets/redux.png" alt="Redux"/>
+                    </div>
+                    <div class="icon-wrapper">
+                        <span>Node.js</span>
+                        <img class="icon-image" src="assets/nodejs.png" alt="NodeJs"/>
+                    </div>
+                    <div class="icon-wrapper">
+                        <span>Express.js</span>
+                        <img class="icon-image" src="assets/express.png" alt="ExpressJs"/>
+                    </div>
+                    <div class="icon-wrapper">
+                        <span>Webpack</span>
+                        <img class="icon-image" src="assets/webpackjs.png" alt="WebpackJs"/>
+                    </div>
+                    <div class="icon-wrapper">
+                        <span>Jest</span>
+                        <img class="icon-image object-cover" src="assets/jest.png" alt="Jest"/>
+                    </div>
+                </div>
+            </section>
+            <section class="portfolio hidden" id="portfolio" data-role="page" data-page="portfolio">
+                <article class="portfolio-container">
+                    <div class="item-wrapper">
+                        <img class="item-preview"  src="assets/previews/calendar_preview.png" alt="Baby calendar"/>
+                        <div class="description">
+                            <h2>Baby calendar</h2>
+                            <p>Application for managing data of your newly born child.</p>
+                        </div>
+                        <div class="link-container">
+                            <a class="link-button" href="https://child-calendar.herokuapp.com/">
+                                <div class="border-left"></div>
+                                <div class="border-right"></div>
+                                Try it
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item-wrapper">
+                        <img class="item-preview"  src="assets/previews/chess_preview.png" alt="Chess"/>
+                        <div class="description">
+                            <h2>Chess online</h2>
+                            <p>Online, account based chess game. Play up to four games simultaneously.</p>
+                        </div>
+                        <div class="link-container">
+                            <a class="link-button" href="https://battlechess.herokuapp.com/">
+                                <div class="border-left"></div>
+                                <div class="border-right"></div>
+                                Play online
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item-wrapper">
+                        <img class="item-preview"  src="assets/previews/memory_preview.png" alt="Memory"/>
+                        <div class="description">
+                            <h2>Memory</h2>
+                            <p>Simple implementation of memory game.</p>
+                        </div>
+                        <div class="link-container">
+                            <a class="link-button" href="https://furmanus.github.io/Memory/">
+                                <div class="border-left"></div>
+                                <div class="border-right"></div>
+                                Play online
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item-wrapper">
+                        <img class="item-preview"  src="assets/previews/gameoflife_preview.png" alt="Game of life"/>
+                        <div class="description">
+                            <h2>Game of life</h2>
+                            <p>My implementation of Conway's game of life.</p>
+                        </div>
+                        <div class="link-container">
+                            <a class="link-button" href="https://furmanus.github.io/Game-of-life/">
+                                <div class="border-left"></div>
+                                <div class="border-right"></div>
+                                Play online
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item-wrapper">
+                        <img class="item-preview" src="assets/previews/arenarl_preview.png" alt="ArenaRl"/>
+                        <div class="description">
+                            <h2>ArenaRl</h2>
+                            <p>Early playable version of dungeon crawler with randomly generated content.</p>
+                        </div>
+                        <div class="link-container">
+                            <a class="link-button" href="https://furmanus.github.io/Arena-RL/">
+                                <div class="border-left"></div>
+                                <div class="border-right"></div>
+                                Play online
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="contact hidden" id="contact" data-role="page" data-page="contact">
+                <div class="contact-data-wrapper">
+                    <div>
+                        <a href="mailto:lukaszlach1984@gmail.com">
+                            <img title="lukaszlach1984@gmail.com" class="contact-image" src="assets/email.png" alt="email"/>
+                        </a>
+                        <p>lukaszlach1984@gmail.com</p>
+                    </div>
+                </div>
+            </section>
+            <section class="info hidden" id="info" data-role="page" data-page="info">
+                <img src="assets/under-construction-256.png" alt="work in progress"/>
+                <h1>under construction</h1>
+            </section>
+            <section class="hobby hidden" id="hobby" data-role="page" data-page="hobby">
+                <img src="assets/under-construction-256.png" alt="work in progress"/>
+                <h1>under construction</h1>
+            </section>
+        </main>
+<!--        <footer>-->
+<!--            <p>Copyright &copy 2019 Łukasz Lach</p>-->
+<!--        </footer>-->
+        <script src="./app.bundle.js"></script>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  color: @pageColor;
+  font-family: sans-serif;
+  background: @bodyBackground;
+
+  .flex-center();
+  justify-content: unset;
+}
+.main {
+  position: relative;
+
+  .flex-center();
+  justify-content: flex-start;
+  .construction-image {
+    width: 256px;
+    height: 256px;
+  }
+}
+footer {
+  p {
+    text-align: center;
+    letter-spacing: 0.125em;
+    text-shadow: 1px 1px #333;
+  }
+}

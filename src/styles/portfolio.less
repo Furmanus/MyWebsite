@@ -1,0 +1,163 @@
+.portfolio {
+  .flex-center();
+
+  position: absolute;
+  opacity: 1;
+  text-align: center;
+  letter-spacing: 0.125em;
+  text-shadow: 1px 1px #333;
+  padding: 30px 120px;
+  transition: opacity 0.3s ease-in-out;
+
+  h1 {
+    text-transform: uppercase;
+  }
+  &-container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    z-index: 1;
+
+    .item {
+      &-preview {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      &-wrapper {
+        .flex-center();
+
+        position: relative;
+        width: 300px;
+        height: 250px;
+        margin-right: 40px;
+        margin-bottom: 40px;
+        background: @darkgray;
+        transition: transform 0.5s ease-in-out;
+        box-shadow: 0 0 3px 3px #333;
+        z-index: 10;
+
+        &:hover {
+          transform: scale(1.2);
+          box-shadow: 0 0 3px 3px @darkgray;
+
+          .description {
+            max-height: 125px;
+          }
+          .link-container {
+            height: calc(50% + 2px);
+            max-height: 127px;
+            top: calc(50% - 1px);
+          }
+        }
+        .title {
+          position: absolute;
+          top: calc(50% - 12px);
+          width: 100%;
+          height: 50%;
+          text-align: center;
+          margin: 0;
+          transition: top 0.5s ease-in-out;
+        }
+        .description {
+          .flex-center();
+
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 125px;
+          padding: 0 10px;
+          max-height: 0;
+          font-size: 12px;
+          box-sizing: border-box;
+          overflow: hidden;
+          transition: max-height 0.5s ease-in-out;
+          background: #333;
+        }
+        .link {
+          &-container {
+            .flex-center();
+
+            position: absolute;
+            top: calc(100% + 1px);
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            height: 50%;
+            max-height: 0;
+            transition: all 0.5s ease-in-out;
+            background: #333;
+          }
+          &-button {
+            position: relative;
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            color: @pageColor;
+            box-sizing: border-box;
+            box-shadow: 0 0 2px 2px @darkgray inset;
+            text-decoration: none;
+            overflow: hidden;
+
+            .border-left {
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 2px;
+              height: 100%;
+              background: @buttonVerticalBorder;
+              animation: borderLeft 2s ease-in-out infinite paused;
+            }
+            .border-right {
+              position: absolute;
+              left: calc(100% - 3px);
+              top: 0;
+              width: 3px;
+              height: 100%;
+              background: @buttonVerticalBorder;
+              animation: borderRight 2s ease-in-out infinite paused;
+            }
+            &:before {
+              content: '';
+              position: absolute;
+              left: 0;
+              top: 0;
+              height: 2px;
+              width: 100%;
+              background: @buttonVerticalBorder;
+              animation: borderTop 2s ease-in-out infinite paused;
+            }
+            &:after {
+              content: '';
+              position: absolute;
+              left: 0;
+              top: calc(100% - 3px);
+              height: 3px;
+              width: 100%;
+              background: @buttonVerticalBorder;
+              animation: borderBottom 2s ease-in-out infinite paused;
+            }
+            &:hover {
+              .border-left {
+                animation: borderLeft 2s ease-in-out infinite;
+              }
+              .border-right {
+                animation: borderRight 2s ease-in-out infinite;
+              }
+              &:before {
+                animation: borderTop 2s ease-in-out infinite;
+              }
+              &:after {
+                animation: borderBottom 2s ease-in-out infinite;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

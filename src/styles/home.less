@@ -1,0 +1,62 @@
+.home {
+  .flex-center();
+
+  text-align: center;
+  letter-spacing: 0.125em;
+  text-shadow: 1px 1px #333;
+  padding: 30px 120px;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+
+  h2 {
+    font-size: 32px;
+    text-shadow: 3px 3px #333;
+  }
+}
+.icon {
+  &-container {
+    width: 70%;
+  }
+  &-wrapper {
+    display: inline-block;
+    position: relative;
+    width: 110px;
+    height: 130px;
+    margin: 15px;
+    background: #FFF;
+    box-shadow: 0 0 3px 3px #333;
+    outline: none;
+
+    span {
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 110px;
+      height: 65px;
+      line-height: 65px;
+      max-height: 0;
+      background: #333;
+      transition: max-height @imageTransitionDuration ease-in-out;
+      overflow: hidden;
+    }
+
+    &:hover {
+      span {
+        max-height: 65px;
+      }
+      img {
+        top: calc(50% - 32px);
+        transform: scale(0.5, 0.5);
+      }
+    }
+
+    img {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      object-fit: scale-down;
+      transition: all @imageTransitionDuration ease-in-out;
+    }
+  }
+}
