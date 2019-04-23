@@ -4,6 +4,7 @@ import {
     HOME,
     INFO,
     PORTFOLIO,
+    CV,
 } from './constants';
 const navTypeToHandlerMap = {
     [HOME]: homeNavClickEventListener,
@@ -11,18 +12,22 @@ const navTypeToHandlerMap = {
     [CONTACT]: contactNavClickEventListener,
     [INFO]: infoNavClickEventListener,
     [HOBBY]: hobbyNavClickEventListener,
+    [CV]: cvNavClickEventListener,
 };
 const homePage = document.getElementById(HOME);
 const portfolio = document.getElementById(PORTFOLIO);
 const contact = document.getElementById(CONTACT);
 const info = document.getElementById(INFO);
 const hobby = document.getElementById(HOBBY);
+const cv = document.getElementById(CV);
+
 const typeToPageMap = {
     [HOME]: homePage,
     [PORTFOLIO]: portfolio,
     [CONTACT]: contact,
     [INFO]: info,
     [HOBBY]: hobby,
+    [CV]: cv,
 };
 
 
@@ -53,6 +58,9 @@ function infoNavClickEventListener() {
 }
 function hobbyNavClickEventListener() {
     showPage(HOBBY);
+}
+function cvNavClickEventListener() {
+    showPage(CV);
 }
 function showPage(type) {
     const page = document.getElementById(type);

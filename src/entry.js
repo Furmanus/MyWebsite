@@ -7,6 +7,6 @@ import {
 
 (() => {
     attachEvents();
-    setYearInFooter();
+    // setYearInFooter();
     initVideo();
 })();

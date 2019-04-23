@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8">
         <title>Łukasz Lach personal website</title>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     </head>
     <body>
 <!--        <img class="image-background" src="assets/1.jpeg" alt=""/>-->
@@ -14,12 +13,17 @@
             <ul class="nav-links">
                 <li>
                     <a href="https://github.com/Furmanus" target="_blank" rel="noopener">
-                        <img src="assets/github.png" alt="GitHub"/>
+                        <img src="assets/github.png" title="GitHub" alt="GitHub"/>
                     </a>
                 </li>
                 <li>
                     <a href="https://www.linkedin.com/in/%C5%82ukasz-lach-b7a00911a/" target="_blank" rel="noopener">
-                        <img src="assets/linkedin.png" alt="LinkedIn"/>
+                        <img src="assets/linkedin.png" title="LinkedIn" alt="LinkedIn"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://codepen.io/Furmanus/" target="_blank" rel="noopener">
+                        <img style="background: #FFF;" src="assets/codepen.png" title="Codepen" alt="Codepen"/>
                     </a>
                 </li>
             </ul>
@@ -30,11 +34,14 @@
                 <li data-nav="portfolio">
                     <span>my projects</span>
                 </li>
+                <li data-nav="cv">
+                    <span>cv</span>
+                </li>
                 <li class="expandable">
                     <span>about me</span>
                     <ul class="about">
                         <li data-nav="info">info</li>
-                        <li data-nav="hobby">cv</li>
+                        <li data-nav="hobby">private</li>
                     </ul>
                 </li>
                 <li data-nav="contact">
@@ -94,6 +101,43 @@
                     <div class="icon-wrapper">
                         <span>Jest</span>
                         <img class="icon-image object-cover" src="assets/jest.png" alt="Jest"/>
+                    </div>
+                </div>
+            </section>
+            <section class="cv hidden" id="cv" data-role="page" data-page="cv">
+                <div class="cv-wrapper">
+                    <h1>Curriculum vitae</h1>
+                    <div class="cv-content">
+                        <div class="cv-content-heading">
+                            <div>
+                                <p>Łukasz Lach</p>
+                                <p>ul. Pilotów 10F/7</p>
+                                <p>80-460 Gdańsk</p>
+                                <p>mobile: +48 737 460 993</p>
+                                <p>e-mail: lukaszlach1984@gmail.com</p>
+                            </div>
+                            <img class="cv-content-image" src="assets/me.jpg" alt="my picture"/>
+                        </div>
+                        <h3>Work experience</h3>
+                        <div class="cv-content-experience">
+                            <ul>
+                                <li>
+                                    <p>Getresponse Sp. z o.o.</p>
+                                    <div>
+                                        <div>
+                                            <p>08-2018 - currently: <span>JavaScript Developer</span></p>
+                                            <p>09-2017 - 07.2018: <span>Junior JavaScript Developer</span></p>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>Maintaining and developing Getresponse Marketing Automation editor</li>
+                                                <li>Maintaining, developing and creating new dashboard/manage pages</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -182,8 +226,16 @@
                 </div>
             </section>
             <section class="info hidden" id="info" data-role="page" data-page="info">
-                <img src="assets/under-construction-256.png" alt="work in progress"/>
-                <h1>under construction</h1>
+                <div class="info-image-wrapper">
+                    <img class="info-image" src="assets/me.jpg" alt="My picture">
+                </div>
+                <div class="info-content">
+                    <h2>Few words about me</h2>
+                    <p>My name is Łukasz Lach and I work as a full time JavaScript Developer for world leading e-mail marketing company.
+                    Besides being full time developer I'm also full time husband and father. In my free time I like to spend time with my family,
+                        code, play video games, workout, read books and listen to music.
+                    </p>
+                </div>
             </section>
             <section class="hobby hidden" id="hobby" data-role="page" data-page="hobby">
                 <img src="assets/under-construction-256.png" alt="work in progress"/>

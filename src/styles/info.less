@@ -1,4 +1,7 @@
 .info {
+  .flex-center();
+
+  flex-direction: row;
   position: absolute;
   opacity: 1;
   text-align: center;
@@ -7,7 +10,20 @@
   padding: 30px 120px;
   transition: opacity 0.3s ease-in-out;
 
-  h1 {
-    text-transform: uppercase;
+  &-image {
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 3px #333;
+
+    &-wrapper {
+      max-width: 50%;
+    }
+  }
+  &-content {
+    max-width: 50%;
+    padding: 0 30px;
+    text-align: justify;
   }
 }

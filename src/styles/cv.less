@@ -1,0 +1,43 @@
+.cv {
+  .page();
+
+  padding: 0;
+  width: 60%;
+
+  &-wrapper {
+    width: 100%;
+
+    h1 {
+      font-size: 2em;
+    }
+  }
+  &-content {
+    .flex-center();
+
+    justify-content: flex-start;
+
+    &-heading {
+      .flex-center();
+
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      border-bottom: 3px solid @pageColor;
+
+      p {
+        text-align: left;
+        margin: 8px auto;
+      }
+    }
+    &-image {
+      width: 130px;
+      height: 150px;
+      object-fit: cover;
+      box-shadow: 0 0 3px 3px #333;
+      margin-bottom: 10px;
+    }
+    &-experience {
+
+    }
+  }
+}
