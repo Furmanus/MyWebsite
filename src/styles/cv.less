@@ -16,6 +16,9 @@
 
     justify-content: flex-start;
 
+    .section-title {
+      margin-bottom: 0;
+    }
     &-heading {
       .flex-center();
 
@@ -37,7 +40,37 @@
       margin-bottom: 10px;
     }
     &-experience {
+      border-bottom: 3px solid @pageColor;
 
+      .worklist {
+        padding-bottom: 10px;
+        padding-left: 0;
+        margin-bottom: 0;
+
+        &-container {
+          .flex-center();
+
+          flex-direction: row;
+        }
+        & > li {
+          list-style-type: none;
+          border-top: 1px solid @pageColor;
+        }
+        li {
+          text-align: left;
+          padding: 5px;
+        }
+        p, h4 {
+          text-align: left;
+
+          &.date {
+            margin-bottom: 2px;
+          }
+        }
+        &-timeline {
+          min-width: 50%
+        }
+      }
     }
   }
 }
