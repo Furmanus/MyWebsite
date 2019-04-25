@@ -12,14 +12,14 @@ const navTypeToHandlerMap = {
     [CONTACT]: contactNavClickEventListener,
     [INFO]: infoNavClickEventListener,
     [HOBBY]: hobbyNavClickEventListener,
-    [CV]: cvNavClickEventListener,
+    // [CV]: cvNavClickEventListener,
 };
 const homePage = document.getElementById(HOME);
 const portfolio = document.getElementById(PORTFOLIO);
 const contact = document.getElementById(CONTACT);
 const info = document.getElementById(INFO);
 const hobby = document.getElementById(HOBBY);
-const cv = document.getElementById(CV);
+// const cv = document.getElementById(CV);
 
 const typeToPageMap = {
     [HOME]: homePage,
@@ -27,7 +27,7 @@ const typeToPageMap = {
     [CONTACT]: contact,
     [INFO]: info,
     [HOBBY]: hobby,
-    [CV]: cv,
+    // [CV]: cv,
 };
 
 

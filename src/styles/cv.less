@@ -39,10 +39,11 @@
       box-shadow: 0 0 3px 3px #333;
       margin-bottom: 10px;
     }
-    &-experience {
+    &-section {
       border-bottom: 3px solid @pageColor;
+      width: 100%;
 
-      .worklist {
+      .list {
         padding-bottom: 10px;
         padding-left: 0;
         margin-bottom: 0;
@@ -70,7 +71,27 @@
         &-timeline {
           min-width: 50%
         }
+        &-education {
+          list-style-type: none;
+
+          li {
+            margin: 2px;
+            padding: 2px 0;
+          }
+        }
       }
     }
+  }
+}
+.skills-container {
+  .flex-center();
+
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 10px;
+
+  span {
+    padding: 5px;
   }
 }
