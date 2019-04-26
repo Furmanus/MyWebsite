@@ -8,9 +8,22 @@
   transition: opacity 0.3s ease-in-out;
   opacity: 1;
 
+  @media only screen and (max-width: 760px) {
+    padding: 10px 10px;
+  }
+
   h2 {
     font-size: 32px;
     text-shadow: 3px 3px #333;
+
+    @media only screen and (max-width: 760px) {
+      font-size: 24px;
+    }
+  }
+  .heading {
+    @media only screen and (max-width: 760px) {
+      margin-top: 40px;
+    }
   }
 }
 .icon {

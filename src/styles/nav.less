@@ -67,7 +67,7 @@
       text-shadow: 2px 2px #333;
       text-transform: uppercase;
       box-sizing: border-box;
-      transition: background 0.25s ease-in-out;
+      transition: background 0.25s ease-in-out, top 0.7s ease-in-out;
 
       @media only screen and (max-width: 750px) {
         display: block;
@@ -104,7 +104,7 @@
           @media only screen and (max-width: 750px) {
             & + li {
               position: relative;
-              top: 72px;
+              top: 74px;
             }
           }
         }
@@ -122,10 +122,20 @@
           transition: max-height 0.7s ease-in-out;
           overflow-y: hidden;
 
+          @media only screen and (max-width: 750px) {
+            left: -2px;
+            width: calc(100% + 2px);
+          }
+
           li {
             list-style-type: none;
             padding: 10px;
             transition: background 0.25s ease-in-out;
+
+            @media only screen and (max-width: 750px) {
+              border-right: 1px solid @pageColor;
+              border-left: 1px solid @pageColor;
+            }
 
             &:first-of-type {
               padding-top: 10px;
