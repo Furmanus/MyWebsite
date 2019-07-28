@@ -5,9 +5,7 @@
   align-items: center;
 }
 .hidden.hidden {
-  opacity: 0;
-  pointer-events: none;
-  z-index: -1000;
+  display: none;
 }
 .left {
   float: left;
@@ -26,4 +24,10 @@
   text-shadow: 2px 2px #333;
   padding: 30px 120px;
   transition: opacity 0.3s ease-in-out;
+}
+.full-height-wrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

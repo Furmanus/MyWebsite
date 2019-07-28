@@ -2,23 +2,24 @@
 @iconHeight: 160px;
 
 .contact {
-  position: absolute;
-  opacity: 1;
   text-align: center;
   letter-spacing: 0.125em;
   text-shadow: 2px 2px #333;
   padding: 30px 120px;
-  transition: opacity 0.3s ease-in-out;
 
   @media only screen and (max-width: 760px) {
     padding: 10px;
   }
 
   p {
-    font-size: 32px;
+    display: block;
+    font-size: 24px;
+    text-align: justify;
+    margin: 18px 60px;
 
     @media only screen and (max-width: 760px) {
       font-size: 18px;
+      margin: 18px 20px;
     }
   }
   &-element {
@@ -35,6 +36,7 @@
       display: none;
       width: 100%;
       font-size: 18px;
+      text-align: center;
       margin: 0;
       height: 40px;
       line-height: 40px;
@@ -93,7 +95,7 @@
   }
   &-data-wrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
