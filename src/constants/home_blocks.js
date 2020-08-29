@@ -5,7 +5,7 @@ import {
     htmlLogo,
     javascriptLogo,
     jestLogo,
-    lessLogo,
+    lessLogo, nestLogo,
     nodejsLogo,
     reactLogo,
     reduxLogo,
@@ -55,6 +55,10 @@ export const homeDevStackBlock = [
     {
         name: 'Express.js',
         imageSrc: expressLogo,
+    },
+    {
+        name: 'Nest.js',
+        imageSrc: nestLogo,
     },
     {
         name: 'Webpack',

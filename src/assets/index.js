@@ -9,6 +9,7 @@ export {default as githubLogo} from './github.png';
 export {default as htmlLogo} from './html5.png';
 export {default as jestLogo} from './jest.png';
 export {default as javascriptLogo} from './js.jpg';
+export {default as nestLogo} from './nest.png';
 export {default as lessLogo} from './less.jpg';
 export {default as linkedinLogo} from './linkedin.png';
 export {default as myPhoto} from './me.jpg';
