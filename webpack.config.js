@@ -15,11 +15,11 @@ module.exports = env => {
         },
         output: {
             path: path.resolve(__dirname, 'dist'),
-            filename: '[name].[chunkhash].bundle.js',
+            filename: '[name].[hash].bundle.js',
         },
         plugins: [
             new MiniCssExtractTextPlugin({
-                filename: '[name].[chunkhash].bundle.css',
+                filename: '[name].[hash].bundle.css',
             }),
             new HTMLWebpackPlugin({
                 template: path.resolve(__dirname, 'src', 'template.html'),
