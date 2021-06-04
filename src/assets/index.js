@@ -24,4 +24,5 @@ export {default as calendarPreview} from './previews/calendar_preview.png';
 export {default as chessPreview} from './previews/chess_preview.png';
 export {default as gameOfLifePreview} from './previews/gameoflife_preview.png';
 export {default as memoryPreview} from './previews/memory_preview.png';
+export {default as edocumentPreview} from './previews/edocument_preview.png';
 

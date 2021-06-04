@@ -4,14 +4,21 @@ import {
     chessPreview,
     gameOfLifePreview,
     memoryPreview,
+    edocumentPreview
 } from '../assets';
 
 export const portfolioBlocks = [
     {
+        name: 'E-Document',
+        description: 'Store your invoices and other documents in AWS cloud based app.',
+        previewUrl: edocumentPreview,
+        link: 'https://edocument.pl/',
+    },
+    {
         name: 'Baby calendar',
         description: 'Application for managing data of your newly born child.',
         previewUrl: calendarPreview,
-        link: 'https://child-calendar.herokuapp.com/',
+        link: 'https://baby-calendar.net.pl/info/',
     },
     {
         name: 'Chess online',
